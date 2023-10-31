@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bodyGeneral{
+    min-height: 100vh;
+    max-height: 100%;
+    min-width: 100vw;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 250px repeat(2,2fr) 50px;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "main main"
+    "footer footer"
+    ;
+
+
+}
+.headerGeneral{
+    grid-area: header;
+    width: 100vw; 
+    display: flex;
+    flex-direction: column;
+}
+.headerGeneral nav{
+    height: 30%;
+    width: 100%;
+    background-color: white !important;
+} 
+.mainGeneral{
+    grid-area: main;
+    width: 100vw;
+    min-height: calc(100vh - 300px);
+    max-height: 100%;
+    background-color: rgb(190, 190, 190);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "izq der der der"
+    "izq der der der"
+    "izq der der der"
+    ;
+}
+.footerGeneral{
+    grid-area: footer;
+}
+
+#aMarca{
+    font-size:xxx-large;
+    font-weight: bold;
+}
+
+#inputBuscar{
+    width: 600px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+#txtBuscar{
+    border-radius: 20px;
+}
+
+#divINREC{
+    margin-right: 50px;
+}
+
+#divINREC a{
+    font-size: x-large;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    opacity: 0.75;
+}
+
+.divSub{
+    display: flex;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.divSub .subtitulos{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.ladoIzq{
+    grid-area: izq;
+    background-color: white;
+    height: 100%;
+    margin-left: 25px;
+    margin-top: 25px;
+
+}
+.ladoIzq .divOpciones{
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.ladoIzq .divOpciones .subtit{
+    font-size: x-large;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.ladoIzq .divOpciones label{
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.ladoIzq .divOpciones input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+
+.ladoDer{
+    grid-area: der;
+}
+
