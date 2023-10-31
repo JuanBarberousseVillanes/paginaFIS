@@ -97,15 +97,18 @@
     margin-top: 25px;
 
 }
+
 .ladoIzq .divOpciones{
     margin-left: 30px;
     margin-top: 40px;
 }
+
 .ladoIzq .divOpciones .subtit{
     font-size: large;
     font-weight: bold;
     text-transform: uppercase;
 }
+
 .ladoIzq .divOpciones label{
     font-size: large;
     text-transform: uppercase;
@@ -119,4 +122,26 @@
 .ladoDer{
     grid-area: der;
 }
+.ladoDer #derTipoComida{
+    margin-left: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.ladoDer #derRecomendaciones{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-top: 30px;
+}
 
+.ladoDer .subtitDer{
+    margin-left: 30px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.ladoDer .card{
+    margin-right: 35px;
+}
