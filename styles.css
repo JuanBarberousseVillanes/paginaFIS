@@ -45,6 +45,7 @@
     "izq der der der"
     "izq der der der"
     ;
+    padding-bottom: 50px;
 }
 .footerGeneral{
     grid-area: footer;
@@ -143,5 +144,5 @@
 }
 
 .ladoDer .card{
-    margin-right: 35px;
+    margin-right: 25px;
 }
